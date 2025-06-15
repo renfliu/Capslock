@@ -16,6 +16,10 @@
 
    ![](images/config-karabiner.png)
 
+### 按键自定义
+
+根据文档修改 mac/capslock.json 文件。或者编辑更易读的 mac/capslock.yml 文件，然后使用 make compile 将其编译成 capslock.json 格式。
+
 
 
 ## 功能

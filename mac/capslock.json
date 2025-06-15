@@ -784,7 +784,7 @@
           ]
         },
         {
-          "description": "command + i = shift + control + a (select line start)",
+          "description": "command + i = shift + command + left (select line start)",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -800,50 +800,16 @@
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "left_arrow",
               "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ]
-        },
-        {
-          "description": "option + command + i = select whole line to head",
-          "type": "basic",
-          "from": {
-            "key_code": "i",
-            "modifiers": {
-              "mandatory": [
-                "left_option",
                 "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "q"
-            },
-            {
-              "key_code": "home",
-              "modifiers": [
-                "left_shift"
-              ]
-            },
-            {
-              "key_code": "home",
-              "modifiers": [
                 "left_shift"
               ]
             }
           ]
         },
         {
-          "description": " i = control a ( line start )",
+          "description": " i = command + left ( line start )",
           "type": "basic",
           "from": {
             "key_code": "i",
@@ -858,15 +824,15 @@
           },
           "to": [
             {
-              "key_code": "a",
+              "key_code": "left_arrow",
               "modifiers": [
-                "left_control"
+                "left_command"
               ]
             }
           ]
         },
         {
-          "description": "command + o = shift + control + e (select line end)",
+          "description": "command + o = shift + command + right (select line end)",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -882,43 +848,16 @@
           },
           "to": [
             {
-              "key_code": "e",
+              "key_code": "right_arrow",
               "modifiers": [
-                "left_control",
+                "left_command",
                 "left_shift"
               ]
             }
           ]
         },
         {
-          "description": "option + command + o = shift + control + option + e (whole line end)",
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_option",
-                "left_command",
-                "right_command",
-                "right_control",
-                "right_shift",
-                "right_option"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "e",
-              "modifiers": [
-                "left_control",
-                "left_shift",
-                "left_option"
-              ]
-            }
-          ]
-        },
-        {
-          "description": " o = control e ( line end )",
+          "description": " o = command + right ( line end )",
           "type": "basic",
           "from": {
             "key_code": "o",
@@ -933,9 +872,9 @@
           },
           "to": [
             {
-              "key_code": "e",
+              "key_code": "right_arrow",
               "modifiers": [
-                "left_control"
+                "left_command"
               ]
             }
           ]
